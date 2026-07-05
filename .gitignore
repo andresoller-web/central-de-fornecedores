@@ -1,0 +1,15 @@
+# Dependências
+node_modules/
+
+# Ambiente / segredos — NUNCA subir chaves para o GitHub
+.env
+.env.local
+.env.*.local
+*.key
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
