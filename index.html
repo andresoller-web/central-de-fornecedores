@@ -409,7 +409,7 @@ window.__SLR_exportParceiros=async function(todos,filtrados,scoreOf,countOf,quem
     lista.forEach(function(s){Object.keys(s||{}).forEach(function(k){if(!BASE_KEYS[k]&&!seen[k]){seen[k]=1;extras.push(k)}})});
 
     var H=["ID","Tipo","Razão Social / Nome","CNPJ","Contato comercial","Telefone / WhatsApp","E-mail","País","Estado / UF","Cidade base","Outras cidades de atuação","Disciplinas","Observações","Etapa","Nota média","Nº de avaliações","Cadastrado por","Data de cadastro","Homologado em"];
-    var W=[14,16,34,20,22,20,30,10,9,18,20,26,42,16,9,8,18,12,12];
+    var W=[15,16,34,20,22,20,30,10,9,18,20,26,42,16,9,8,18,12,12];  /* col A: espaco da marca */
     DOCS.forEach(function(d){H.push("Validade — "+d[1]);W.push(14)});
     extras.forEach(function(k){H.push(k);W.push(18)});
     var nCols=H.length,ETAPA_COL=13;
